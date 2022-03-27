@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <script type="text/javascript">
+            "use strict"; 
+
+            console.log('start')
+
+
+                  //1에서 10까지의 합을 출력
+                  // 반복되면서 sum의 값이 누적된다
+                
+                let sum = 0;
+                for(let i = 1; i<=10; i++)
+                sum=sum+i; // 외부에서 선언했기때문에 사라지지않고 계속 적용됨
+
+                //1    sum= 0+1;
+                //2    sum= (0+1)+2;
+                //3    sum= (0+1+2)+3;
+                // ...... 10   sum=(0+1+2+3+4+5+6+7+8+9)+10;
+
+
+                console.log(sum);
+
+                console.log('end');
+
+          
+
+        </script>
+    </body>
+</html>
