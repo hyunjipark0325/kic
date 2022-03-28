@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+            "use strict"; 
+
+            let doFunc1 = function(){
+                console.log('Hello Function');
+            };
+
+
+            //화살표 함수 = lambda
+            let doFunc2 = ()=>{
+                console.log('Hello Function');
+            };
+
+            let doFunc3 = (data1, data2 )=>{
+                console.log('data 1: ',data1);
+                console.log('data 2 : ',data2);
+            };
+
+            //let doFunc4 = (data1, data2)=>{
+            //    return data1 + data2;
+            // }
+
+            let doFunc4 = (data1, data2)=> data1 + data2;
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            "use strict"; 
+
+            doFunc1();
+            doFunc2();
+            doFunc3(10,20);
+            console.log(doFunc4(20,30));
+
+
+        </script>
+
+    </body>
+</html>

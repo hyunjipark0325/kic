@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+            function gugudan(){
+        let html = '';
+
+        html+= '<table>';
+ 
+            for(let dan=0; dan<=9; dan++){
+                html+='<tr>';
+                    for(let col=0; col<=9; col++){
+                        if(dan==0 && col ==0){
+                            html+='<td></td>';
+                        }else if(dan==0){
+                            html+='<td>X'+col+'</td>';
+                        }else if(col==0) {
+                            html+='<td>'+dan+'단</td>';
+                        }else{
+                            html+='<td>'+dan+'X'+col+'='+(dan*col)+'</td>';
+                        }
+                    }
+                    html+='</tr>';
+            }
+            html+='</table>';
+            return html;
+        }
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            let resultHtml = gugudan();
+
+            document.write(resultHtml);
+        </script>
+
+    </body>
+</html>

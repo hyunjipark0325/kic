@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+            "use strict"; 
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            "use strict"; 
+
+
+        const fFunc = function(){
+            return function(){
+                console.log('Hello Function');
+            };
+        };
+
+        let result = fFunc();
+        result();
+
+        fFunc()();
+
+
+        </script>
+
+    </body>
+</html>

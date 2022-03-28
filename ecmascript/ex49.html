@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+            "use strict"; 
+
+            let doFunc1 = function(){
+                console.log('Hello Function 1');
+            };
+           
+
+
+
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            "use strict"; 
+
+            doFunc1();
+
+            //변수의 할당 
+            let doFunc2 = doFunc1;
+            doFunc2();
+
+            console.log(doFunc1);
+            console.log(doFunc2);
+
+        </script>
+
+    </body>
+</html>
