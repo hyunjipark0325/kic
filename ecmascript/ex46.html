@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+            "use strict"; 
+
+        //함수 선언을 이용한 구구단 
+
+         function gugudan(dan){ 
+
+            //console.log(dan);
+             document.write('<table border="1" width="800">');
+            document.write('<tr>');  
+            for(let col=1; col<=9 ; col++ ){
+                //console.log(col);
+                document.write('<td>'+dan+'X'+col+'='+(dan*col)+'</td>');
+            }
+            document.write('</tr>'); 
+            document.write('</table>'); 
+         }
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            "use strict"; 
+
+            console.log('시작')
+
+            gugudan(2);
+            gugudan(3);
+            gugudan(4);
+            gugudan(5);
+            gugudan(6);
+            gugudan(7);
+            gugudan(8);
+            gugudan(9);
+
+           
+            console.log('끝')
+        </script>
+
+    </body>
+</html>

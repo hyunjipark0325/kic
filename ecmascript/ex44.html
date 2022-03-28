@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+            "use strict"; 
+
+        //함수 선언
+        function doFunc(){
+            console.log('Hello Function');
+         }
+
+         function doFunc1(data1){ 
+             console.log('data1 :', data1);
+         }
+
+         function doFunc2(data1,data2,data3){ 
+             console.log('data1 :', data1);
+             console.log('data2 :', data2);
+             console.log('data3 :', data3);
+         }
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            "use strict"; 
+
+            console.log('시작')
+            //함수 호출  -원하는 만큼 여러번 호출할수있음 
+            doFunc();
+            doFunc();
+            doFunc();
+
+            doFunc1(10);
+            doFunc2(10, 20, 30 );
+           
+            console.log('끝')
+        </script>
+
+    </body>
+</html>
