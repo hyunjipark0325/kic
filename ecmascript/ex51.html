@@ -12,9 +12,11 @@
 
 
         const fFunc = function(){
-            return function(){
+            console.log('asdfasfasfasdfasdfasfasdfsadf');
+            return function(){   // 리턴이란??? 호출한대에 값을 던진 후 종료
                 console.log('Hello Function');
             };
+          
         };
 
         let result = fFunc();

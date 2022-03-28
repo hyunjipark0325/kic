@@ -6,19 +6,22 @@
             "use strict"; 
 
         //함수 선언
-        function doFunc(){
-            console.log('Hello Function');
-         }
-
-         function doFunc1(data1){ 
-             console.log('data1 :', data1);
-         }
+     
 
          function doFunc2(data1,data2,data3){ 
              console.log('data1 :', data1);
              console.log('data2 :', data2);
              console.log('data3 :', data3);
          }
+          
+         function doFunc1(파라미터){ 
+             console.log('data1 :', 파라미터);
+         }
+         
+         function doFunc(){
+            console.log('Hello Function');
+         }
+
         </script>
     </head>
     <body>
@@ -31,7 +34,7 @@
             doFunc();
             doFunc();
 
-            doFunc1(10);
+            doFunc1(10); // 아규먼트
             doFunc2(10, 20, 30 );
            
             console.log('끝')
