@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <script type="text/javascript">
+            "use strict"; 
+            
+            //객체  - object 
+            //배열 선언
+            let arr1 =[];
+            //객체 선언  / JSON( Javascript Object Notation)
+            //속성 - 멤버 변수 (프로퍼티 / 필드)
+            //기능 - 메서드 (함수)
+            let obj1 = {};
+
+
+            //멤버 변수 선언과 초기화가 동시에 됨 
+            //객체 또는 class를 선언한다 
+            let obj2 = {
+                name: '7D 건조 망고 ',
+                type: '당절임',
+                Components: '망고, 설탕, 기타 ...',
+                region: '필리핀'
+            };
+
+            console.log(typeof obj2);
+            console.log(obj2);
+
+            //배열식 접근
+            console.log(obj2['name']);
+
+            //객체식 접근(.참조연산자)
+            console.log(obj2.name);
+
+            obj2.name = '7D 건조 딸기 ';
+            console.log( obj2.name);
+
+
+            //얕은 복사
+            let obj3 = obj2;
+
+            console.log(obj2.name, obj3.name);
+
+            obj2.name = '3D 건조 포도';
+
+            console.log(obj2.name, obj3.name);
+
+         </script>
+
+    </body>
+</html>
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <script type="text/javascript">
+            "use strict"; 
+
+            const vfunc1 = function(data1, data2){
+                console.log(data1, data2 );
+            };
+            //가변인자 함수 
+            //매개변수의 갯수가 불확실한 경우 :가변인자(매개변수)
+
+            const vfunc2 = function(){
+                //console.log('vfunc2 호출 :', arguments);
+                //console.log('vfunc2 호출 :', arguments.length);
+
+                for(let i=0; i<arguments.length; i++){
+                    console.log(arguments[i]);
+                }
+            };
+
+            vfunc1(10, 20);
+            // 아래 데이터가 내부저장소인 arguments에 들어간다 
+            vfunc2(10);
+            vfunc2(10, 20);
+            vfunc2(10, 20, 30);
+
+         </script>
+
+    </body>
+</html>
+

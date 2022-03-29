@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <script type="text/javascript">
+            "use strict"; 
+            
+            //최대값을 저장하는 코딩 
+            const maxValue = function(){
+                let maxValue = 0;
+                for(let value of arguments){
+                    if(value>= maxValue){
+                        maxValue=value;
+                    }
+                }
+                return maxValue;
+            }
+
+            console.log(maxValue(1, 4, 2, 6));
+
+
+         </script>
+
+    </body>
+</html>
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <script type="text/javascript">
+            "use strict"; 
+
+            let num1 = 10;
+            let num2 = num1;  // 값을 복사 :깊은복사 (deep)
+
+            console.log(num1, num2);
+
+            num2 = 20;
+            console.log(num1, num2);
+
+            let arr1 = [10, 20, 30];
+            let arr2 = arr1;  // 주소를 복사 :얕은 복사 (shadow)
+
+
+            arr2[0]=20;
+            console.log(arr1[0], arr2[0]);  
+            // arr2값만 변경하였지만 arr1값 까지 변경됨 
+            // 이유- 배열객체는 하나씩 저장하는것과 저장 방법이다름 (저장공간이 따로있고 주소값이 할당됨)
+            // arr2값을 변경하면 arr1을 참조해서 위치값이 바뀜 -> 그래서 arr1도 ->20으로 변경되어 출력 
+            //참조변수
+            console.log(arr1);
+
+
+        </script>
+
+    </body>
+</html>
+
