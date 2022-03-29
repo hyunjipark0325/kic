@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+            "use strict"; 
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            "use strict"; 
+
+
+        const fFunc = function(type){
+            if(type ==1){
+            return function(){
+                console.log('Hello Function 1');
+            }
+        }else {
+            return function(){
+                console.log('Hello Function 2');
+        }
+    }
+}
+
+        fFunc(1)();
+        fFunc(0)();
+
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+            "use strict"; 
+
+
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            "use strict"; 
+            // 자료형 변환
+            //number() - 숫자
+            //String() - 문자열
+            //Boolean() - 논리값
+
+            let data1 = '10';
+            let data2 = '20';
+
+            let sum1 = data1+data2;
+            console.log(sum1);
+
+
+            //문자  ->숫자 대소문자 구분하여야함  
+            let sum2 = Number(data1)+ Number(data2);
+            console.log(sum2);
+
+            let data3 = '2000원';
+            //NaN = Not a Number;  숫자만 바꿀수있음 
+            console.log(Number(data3));
+
+            //parseInt()  숫자와 문자가 있을때 숫자만 구별해냄 
+            console.log(parseInt(data3));
+
+
+            
+            let data4 = '원2000';
+            console.log(Number(data4));
+            // 문자열로 시작하면 parseInt 도 안됨 
+            console.log(parseInt(data4));
+
+        </script>
+
+    </body>
+</html>
+

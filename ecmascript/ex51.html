@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+            "use strict"; 
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            "use strict"; 
+
+
+        const fFunc = function(){
+            console.log('asdfasfasfasdfasdfasfasdfsadf');
+            return function(){   // 리턴이란??? 호출한대에 값을 던진 후 종료
+                console.log('Hello Function');
+            };
+          
+        };
+
+        let result = fFunc();
+        result();
+
+        fFunc()();
+
+
+        </script>
+
+    </body>
+</html>
