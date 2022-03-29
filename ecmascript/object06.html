@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+        <script type="text/javascript">
+            "use strict"; 
+            
+            //생성자를 이용한 생성
+           let Student = function(name, kor, mat, eng) {
+                this.name = name;
+                this.kor = kor;
+                this.mat = mat;
+                this.eng = eng;   
+                this.getSum = function(){
+                    return this.kor + this.mat + this.eng;
+                };
+                this.getAvg = function(){
+                    return this.getSum()/3;                                  
+                };
+           };                                                                                                       
+
+           let stu1 = new Student('홍길동', 96, 98, 92);
+           console.log(stu1);
+           console.log(stu1.getAvg());
+
+           let stu2 = new Student('박문수', 98, 92, 91);
+           console.log(stu2.getAvg());
+
+
+         </script>
+
+    </body>
+</html>
+

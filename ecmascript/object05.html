@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+        <script type="text/javascript">
+            "use strict"; 
+            
+            //JSON
+            let obj1 = {};
+
+            // 함수를 통한 설정
+           let makeStudent = function(name, kor, mat, eng) {
+               let obj = {
+                   name: name,
+                   kor: kor,
+                   mat: mat,
+                   eng: eng,
+
+                   getsum: function(){
+                       return this.kor + this.mat + this.eng;
+                   },
+                   getAvg: function(){
+                       return this.getsum() / 3;
+                   }
+               }
+               return obj;
+
+           };
+
+           let stu1 = makeStudent('홍길동', 96, 98, 92);
+           console.log(stu1);
+           console.log(stu1.getAvg());
+
+           let stu2 = makeStudent('박문수', 98, 92, 91);
+           console.log(stu2.getAvg());
+
+
+         </script>
+
+    </body>
+</html>
+
