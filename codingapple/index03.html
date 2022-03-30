@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="alert-box" id="alert">알림창임 
+        <button onclick="알림창닫기()">닫기</button>
+    </div>  
+
+        <button onclick="알림창열기()">버튼</button>
+
+    <script>
+
+        //함수(function)- 코드 짧게 축약해서 쓰고싶을때  + 긴코드 재사용이 잦을때 편리
+        //JS는 html 밑에 쓴다 
+        function 알림창열기(){
+            document.getElementById('alert').style.display='block';
+        }
+
+        function 알림창닫기(){
+            document.getElementById('alert').style.display='none';
+        }
+
+
+
+    </script>
+
+
+</body>
+</html>
