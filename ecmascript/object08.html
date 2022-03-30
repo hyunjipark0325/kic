@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+        <script type="text/javascript">
+            "use strict"; 
+            
+            //class를 이용한 생성
+
+            //선언
+            class Student{
+                //생성자/ 초기화
+                constructor(name, kor, mat, eng){
+                    this.name = name;
+                    this.kor = kor;
+                    this.mat = mat;
+                    this.eng = eng;
+                }
+
+                getSum(){
+                    return this.kor+this.mat+this.eng;
+                }
+            }
+
+
+            let stu1 = new Student('홍길동',95,98,87);
+            console.log(stu1);
+            console.log(stu1.name);
+            console.log('합계 :', stu1.getSum());
+
+
+            stu1.name = '박문수';
+            console.log(stu1.name);
+
+
+         </script>
+
+    </body>
+</html>
+

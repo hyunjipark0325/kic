@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+        <script type="text/javascript">
+            "use strict"; 
+            
+            //내장객체 - 자료형과 연관됨 
+
+            // 문자열과 관련된 내장객체 
+
+            let str1 = '문자열';
+            let str2= new String('문자열 Hello World Hello World');
+
+            //문자열 
+            console.log(str1);
+            //참조변수
+            console.log(str2);
+
+            console.log('길이 :',str2.length);
+
+            //문자열 문자를추출 
+            console.log(str2[0]);
+            console.log(str2.charAt(0));
+
+            //일부 문자열 추출 
+            console.log(str2.substr(6));
+            console.log(str2.substr(6, 5));
+
+            console.log(str2.substring(6));
+            console.log(str2.substring(6, 11));
+
+            console.log(str2.slice(6));
+            console.log(str2.slice(6, 11));
+
+            //검색- 위치 
+            console.log(str2.indexOf('1'));
+            console.log(str2.indexOf('1', 8));
+            console.log(str2.indexOf('z'));
+
+            //
+            console.log(str2.includes('11'));
+            console.log(str2.startsWith('문제'));
+            console.log(str2.endsWith('rd'));
+            
+            //대소문자 변환
+            console.log('AAA'.toLowerCase());
+            console.log('bbb'.toUpperCase());
+
+            //문자열 치환
+            console.log(str2.replace('Hello','안녕'));
+            console.log(str2.replaceAll('Hello','안녕'));
+
+            //문자열 결합
+            console.log('1'+'1'+'1');
+            console.log(str2.concat('111','222','333'));
+
+            console.log(str2.repeat(3));
+
+            //앞뒤 공백 제거 
+            let str3 = 'Hello Hello';
+            console.log(str3);
+            console.log(str3.trim());
+
+
+         </script>
+
+    </body>
+</html>
+

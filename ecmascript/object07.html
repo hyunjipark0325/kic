@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+        <script type="text/javascript">
+            "use strict"; 
+            
+            //class를 이용한 생성
+
+            //선언
+            class Student{
+                //생성자/ 초기화
+                constructor(){
+                    this.name = '홍길동';
+                    this.kor = 90;
+                    this.mat = 92;
+                    this.eng = 90;
+                }
+            }
+
+            //생성 
+            //stu1 - 참조변수/객체변수
+            let stu1 = new Student();
+            console.log(stu1);
+            console.log(stu1.name);
+
+            stu1.name = '박문수';
+            console.log(stu1.name);
+
+
+         </script>
+
+    </body>
+</html>
+
