@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+         </script>
+
+    <body>
+          <script type="text/javascript">
+            "use strict"; 
+
+            let map1 = new Map();
+            console.log(map1);
+
+            map1.set('key1', 'value1');
+            map1.set('key2', 'value2');
+            map1.set('key3', 'value3');
+            console.log(map1);
+
+            //key
+            console.log(map1.has('key1'));
+
+            //keys
+            let objs = map1.keys();
+            //objs - iterator에 저장되있는 데이터 가져옴 
+            console.log( objs.next());
+          
+            //values
+            console.log(objs.next().value);
+
+            //values
+            let objValues = map1.values();
+            console.log(objValues.next());
+            console.log(objValues.next().value);
+
+            //메서드 : forEach
+            map1.firEach(function(value, key){
+              console.log(key, value);
+            });
+            
+        </script>
+    </body>
+</html>
+

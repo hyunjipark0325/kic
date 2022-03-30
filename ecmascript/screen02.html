@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <script type="text/javascript">
+            "use strict"; 
+
+            let openWindow = function(){
+
+                setTimeout(function(){
+                    let width=600;
+                    let height=800;
+
+                    let top=screen.height/2 - height/2;
+                    let left=screen.width/2 - width/2;
+                    console.log(top, left)
+
+                    let option = 'top='+top +',left=' + left +',width='+width + ',height=' + height;
+                    console.log(option);
+
+                    open('https://www.daum.net','openwin', option);
+    
+                },5000);
+            }
+
+        </script>
+    </head>
+
+    <body>
+          
+        <a href="javascript:openWindow()">창 열기 </a>
+
+    </body>            
+</html>
+

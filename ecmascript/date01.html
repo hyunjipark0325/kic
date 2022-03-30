@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+         </script>
+
+    </body>
+          <script type="text/javascript">
+            "use strict"; 
+
+            //Date 
+            let today = new Date();
+            console.log(today);
+            console.log(today.toString());//시간을 글자로 보여줘! 인데 위에꺼랑 같게 나옴 
+            console.log(today.toLocaleString());//지역별의 시간 
+
+            let strToday = today.toLocaleString();
+            console.log(strToday.substring(0, 13));
+
+            //메서드
+            console.log(today.getFullYear());//년만 추출 
+            console.log(today.getMonth()+1);//달만 추출  0부터 세기 떄문에 반드시 +1 해줘야됨 
+            console.log(today.getDate());
+            console.log(today.getDay());// 0 : 일요일 
+
+            //시간 
+            //Timestamp
+            //millisecond (초를 다시 1000으로 나눈)
+            //1970년 1월 1일부터 UTC로 시작하는 초(second) 수의 시간표현 
+            console.log(today.getTime());
+
+
+    
+            
+        </script>
+    
+</html>
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body> 
+        <script type="text/javascript">
+          "use strict"; 
+
+          let strJumin = '123456-1234567';
+
+          strJumin = strJumin.replace('-','');
+
+          const bits = [2,3,4,5,6,7,8,9,2,3,4,5];
+
+          let sum =0;
+          for(let i=0; i<bits.length ; i++){
+          sum += Number(strJumin.substring(i, i+1))*bits[i];
+        }
+          let lastNum = Number(strJumin.substring(12, 13));
+
+          let resultNum = (11 - (sum%11))%10;
+
+          console.log( lastNum, resultNum);
+          if(lastNum == resultNum){
+            console.log(true);
+          }else{
+            console.log(false);
+          }
+
+       /*   let strJumin = '123456-1234567';
+
+          strJumin = strJumin.replace('-','');
+          //console.log(strJumin);
+
+          let num01 = Number(strJumin.substring(0, 1))*2;
+          let num02 = Number(strJumin.substring(1, 2))*3;
+          let num03 = Number(strJumin.substring(2, 3))*4;
+          let num04 = Number(strJumin.substring(3, 4))*5;
+          let num05 = Number(strJumin.substring(4, 5))*6;
+          let num06 = Number(strJumin.substring(5, 6))*7;
+          let num07 = Number(strJumin.substring(6, 7))*8;
+          let num08 = Number(strJumin.substring(7, 8))*9;
+          let num09 = Number(strJumin.substring(8, 9))*2;
+          let num10 = Number(strJumin.substring(9, 10))*3;
+          let num11 = Number(strJumin.substring(10, 11))*4;
+          let num12 = Number(strJumin.substring(11, 12))*5;
+
+          let lastNum = Number(strJumin.substring(12, 13));
+
+          //console.log(typeof unm01, num02);
+
+          let sum = num01 +num02+ num03+num04+num05+num06+num07+num08+num09+num10+num11+num12 ;
+          let resultNum = (11 - (sum%11))%10;
+
+          //console.log( lastNum, resultNum);
+          if(lastNum == resultNum){
+            console.log(true);
+          }else{
+            console.log(false);
+          }*/
+
+
+
+
+        </script>
+    </body>   
+</html>
+
