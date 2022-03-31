@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+            "use strict"; 
+
+
+            const initCap = function(sentence){
+                let words = sentence.split('');
+                let result ='';
+                for(let i=0; i<words.length; i++){
+                    result += words[i].substring(0,1).toUpperCase()+words[i].substring(1)+'';
+                }
+                return result;
+            }
+
+        const checkfrm = function(){
+           let data1 = document.frm1.data1.value;
+           document.frm1.data2.value = initCap(data1);
+        };
+            
+        
+        </script>
+
+    </head>
+         
+
+    <body>
+
+        <form action="#" name="frm1">
+            <input type="text" name="data1"/>
+            -
+            <input type="text" name="data2" />
+
+            <br /><br />
+
+            <input type="button"  value="데이터 옮기기" onclick="checkfrm()" />
+
+
+        </form> 
+
+     
+    </body>
+         
+
+</html>
+

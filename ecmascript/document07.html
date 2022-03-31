@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+            "use strict"; 
+
+
+         
+
+        const checkfrm = function(){
+            console.log(document.frm1.data1.value);
+            console.log(document.frm1.data2.value);
+            console.log(document.frm1.data3.value);
+
+        };           
+        
+        </script>
+
+    </head>
+         
+
+    <body>
+
+        <form action="#" name="frm1">
+            <input type="text" name="data1"/> <br /><br />
+            <input type="password" name="data2" /> <br /><br />
+            <textarea name="data3"></textarea> <br /><br />
+
+            <input type="button"  value="데이터 확인" onclick="checkfrm()" /> <br /><br />
+
+
+        </form> 
+
+     
+    </body>
+         
+
+</html>
+

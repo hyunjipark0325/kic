@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+            "use strict"; 
+
+
+        const checkfrm = function(){
+           let data1 = document.frm1.data1.value;
+           document.frm1.data2.value = data1;
+        };
+            
+        
+        </script>
+
+    </head>
+         
+
+    <body>
+
+        <form action="#" name="frm1">
+            <input type="text" name="data1" value="홍길동" />
+            -
+            <input type="text" name="data2" />
+
+            <br /><br />
+
+            <input type="button"  value="데이터 옮기기" onclick="checkfrm()" />
+
+
+        </form> 
+
+     
+    </body>
+         
+
+</html>
+

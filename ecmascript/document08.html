@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+            "use strict";      
+
+        const checkfrm = function(){
+           // console.log(document.frm1.ch1.checked);
+           // console.log(document.frm1.ch2.checked);
+           // console.log(document.frm1.ch3.checked);
+           // console.log(document.frm1.ch4.checked);
+
+           if(document.frm1.ch1.checked){
+            console.log(document.frm1.ch1.value);
+           }
+           if(document.frm1.ch2.checked){
+            console.log(document.frm1.ch2.value);
+           }
+           if(document.frm1.ch3.checked){
+            console.log(document.frm1.ch1.value);
+           }
+           if(document.frm1.ch4.checked){
+            console.log(document.frm1.ch4.value);
+           }
+        
+
+        };           
+        
+        </script>
+
+    </head>
+         
+
+    <body>
+
+        <form action="#" name="frm1">
+            <input type="checkbox" name="ch1" value="사과"/>사과 <br /><br />
+            <input type="checkbox" name="ch2" value="수박"/>수박 <br /><br />
+            <input type="checkbox" name="ch3" value="딸기"/>딸기 <br /><br />
+            <input type="checkbox" name="ch4" value="참외"/>참외 <br /><br />
+
+
+
+            <input type="button"  value="데이터 확인" onclick="checkfrm()" /> <br /><br />
+
+
+        </form> 
+
+     
+    </body>
+         
+
+</html>
+

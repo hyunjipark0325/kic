@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+            "use strict";      
+            const checkfrm = function(){
+                //options - 복수면 배열 처리
+                console.log(document.frm1.s.options);
+                console.log(document.frm1.s.options.length);
+                console.log(document.frm1.s.options.selectedIndex);
+
+                console.log(document.frm1.s.options[document.frm1.s.options.selectedIndex]);
+                console.log(document.frm1.s.options[document.frm1.s.options.selectedIndex].text);
+                console.log(document.frm1.s.options[document.frm1.s.options.selectedIndex].value);
+
+
+                document.frm1.s.options.selectedIndex=1;
+            };
+
+        </script>
+
+    </head>
+    <body>  
+        <form action="#" name="frm1">  
+            <select name="s">
+                <option value="1">사과</option>
+                <option value="2">수박</option>
+                <option value="3">딸기</option>
+                <option value="4">참외</option>
+            </select>
+        <input type="button"  value="데이터 확인" onclick="checkfrm()" /> <br /><br />
+        </form>
+    </body>
+</html>
+

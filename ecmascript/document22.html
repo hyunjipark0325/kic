@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+            "use strict";      
+            const mouseClick = function() {
+              console.log('mouseClick')
+             
+            };
+
+            window.onload = function(){
+                /*document.getElementById('btn1').onclick = function(){
+                    console.log('mouseClick');
+                };*/
+             let buttons = document.getElementsByClassName('btn');
+                //console.log(buttons);
+                //buttons.onclick = function(){
+                //   console.log('click');
+                //};
+                for(let i=0; i<buttons.length; i++){
+                    buttons[i].onclick = function(){
+                   console.log('click');
+                 };
+                }
+
+              
+            };
+        </script>
+    </head>
+    <body> 
+ >
+       <input type="button" class="btn" id="btn1" value="버튼 클릭"/>
+       <input type="button" class="btn" id="btn2" value="버튼 클릭"/>
+       <input type="button" class="btn" id="btn3" value="버튼 클릭"/>
+
+
+   
+  
+    </body>
+</html>
+

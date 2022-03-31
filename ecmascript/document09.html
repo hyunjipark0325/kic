@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+            "use strict";      
+
+        const checkfrm = function(){
+           // console.log(document.frm1.ch.length); <!--이름을 동일하게하면 배열화됨 4출력-->
+
+           //아래와 같이 하면 선택하는것의 value만 출력됨
+           for(let i=0; i<document.frm1.ch.length; i++){
+               if(document.frm1.ch[i].checked){
+                   console.log(document.frm1.ch[i].value);
+               }
+           }
+        };           
+        
+        </script>
+
+    </head>
+    <body>
+
+        <form action="#" name="frm1">  <!--이름을 동일하게하면 배열화됨 4출력-->
+            <input type="checkbox" name="ch" value="사과"/>사과 <br /><br />
+            <input type="checkbox" name="ch" value="수박"/>수박 <br /><br />
+            <input type="checkbox" name="ch" value="딸기"/>딸기 <br /><br />
+            <input type="checkbox" name="ch" value="참외"/>참외 <br /><br />
+
+            <input type="button"  value="데이터 확인" onclick="checkfrm()" /> <br /><br />
+        </form> 
+
+    </body>
+</html>
+

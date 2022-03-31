@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+            "use strict";      
+            
+            const keyevt= function(){
+                console.log('evt 실행');
+            };
+        </script>
+    </head>
+    <body> 
+        <!--이벤트: 그래픽 화면의 변화 
+        Mouse Event
+            onclick / ondbclick / onmousedown / onmouseup 
+            / onmouseover(버튼에마우스올렸을때) / onmouseout(올린후 치웠을때)
+        Keyboard Event
+            onkeydown / onkeypress(text입력하면) / onkeyup
+        HTML Control Event
+            onfocus / onblur 
+        Window Event
+            onload(HTML문서 메모리 로딩(읽혀짐)) / onresize
+        --> 
+        
+        <input type="text" onkeypress="keyevt()" />
+
+        
+    </body>
+</html>
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <style type="text/css">
+            div{
+                width:300px;
+                height: 400px;
+                border: 1px solid black;
+            }
+        </style>
+        <script type="text/javascript">
+            "use strict";      
+
+            window.onload = function(){
+                document.getElementById('btn1').onclick = function(){
+                    let div = document.getElementById('div1');
+                    div.style.border = '1px solid red';
+                    div.style.color = 'blue';
+                 };
+                 document.getElementById('btn2').onclick = function(){
+                    let div = document.getElementById('div1');
+                    div.style.border = '';
+                    div.style.color = '';
+                 };
+            };
+           
+        </script>
+    </head>
+    <body> 
+        <input type="button" id="btn1" value="style 추가" />
+        <input type="button" id="btn2" value="style 제거" />
+
+        <br/><hr/><br/>
+        <div id="div1">Hello DIV</div>
+
+    </body>
+</html>
+

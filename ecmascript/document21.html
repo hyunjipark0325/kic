@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+            "use strict";      
+            const mouseClick = function() {
+              console.log('mouseClick')
+             
+            };
+
+            window.onload = function(){
+                document.getElementById('btn1').onclick = function(){
+                    console.log('mouseClick');
+                    document.getElementById('btn1').onclick = null; // 이벤트의 동적제거 ( 한번만 클릭되고 두번째부터는 출력안됨)
+                };
+            };
+        </script>
+    </head>
+    <body> 
+        <!--inline 이벤트-->
+            <input type="button" value="버튼 클릭" onclick="mouseClick()"/>
+       <!--동적 이벤트-->
+       <input type="button" id="btn1" value="버튼 클릭"/>
+
+   
+  
+    </body>
+</html>
+

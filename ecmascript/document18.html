@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+            "use strict";      
+            const gugudan = function(){
+                console.log('gugudan실행');
+
+                let startDan = document.frm.startdan.value;
+                let endDan = document.frm.enddan.value;
+
+                console.log(startDan, endDan);
+
+                let html = '<table border="1" width="800">';
+                    html+='<tr>';
+                    html+='<td>1열</td>';
+                    html+='</tr>';
+                    html+='</table>';
+                            
+                let result = document.getElementById('result');
+                result.innerHTML =html;
+
+            };
+
+        </script>
+    </head>
+    <body> 
+        <form name="frm">
+            시작단 <input type="text" name="startdan" />
+            ~
+            끝단 <input type="text" name="enddan" />
+            <input type="button" value="구구단 출력" onclick="gugudan()"/>
+        </form>
+
+        
+
+        <br><hr><br>
+
+        <div id="result">결과</div>
+
+  
+    </body>
+</html>
+

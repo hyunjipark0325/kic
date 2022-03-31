@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+            "use strict";      
+
+            const viewTag = function(){
+                //let h1s = document.getElementsByTagName('h2');
+                let h1s = document.getElementsByClassName('c1')
+                //console.log(h1s); // 배열의 index로 데이터에 접근   컬렉션으로 나옴
+                console.log(h1s[0]); // 각괄호안에있는거만 나옴 
+            };
+        </script>
+    </head>
+    <body> 
+
+        <input type="button" value="태그 읽기" onclick="viewTag()"/>
+        <br><hr><br>
+
+        <h2 id="h1" class="c1">Header 1</h2>
+        <h2 id="h2" class="c2">Header 2</h2>
+
+  
+    </body>
+</html>
+

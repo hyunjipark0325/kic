@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+            "use strict";      
+
+            const viewText = function(){
+                let h2 = document.getElementById('h1');
+                console.log(h2.innerHTML); // tag까지
+                console.log(h2.textContent); // 순수 text 
+
+                h2.innerHTML = '<i>Header 3</i>'; // 태그일기 클릭시 h1->이탤릭체 Header 3으로 변경 
+              //  h2.textContent = '<i>Header 3</i>';  // 순수 text   - tag가 해석이 안됨 
+
+
+            };
+        </script>
+    </head>
+    <body> 
+
+        <input type="button" value="태그 읽기" onclick="viewText()"/>
+        <br><hr><br>
+
+        <div id="h1" class="c1"><b>Header 1</b></div>
+        <div id="h2" class="c2"><b>Header 2</b></div>
+
+  
+    </body>
+</html>
+
