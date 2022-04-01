@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="./css.css">
+        <script src="https://kit.fontawesome.com/a4d1296ef7.js" crossorigin="anonymous"></script>
+        <style type="text/css"></style>
+    </head>
+    <body style="background-color: rgb(104, 104, 104)">          
+        <div class="title" > LIST </div>
+        <input type="button" class="list" onclick="main(1)" value="MAIN" >
+        <br>
+        <input type="button" class="list" onclick="main(2)" value="LIST" >
+        <br>
+        <input type="button" class="list" onclick="main(3)" value="PROFILE" >
+        <br>
+        <input type="button" class="list" onclick="main(4)" value="GALLERY" >
+        <br>
+        <input type="button" class="list" onclick="main(5)" value="END" >
+        <script>
+        function main(move) {
+            if(move =='1'){
+                location.href = "./hyunji01.html";
+            }else if(move =='3'){
+                location.href = "./hyunji03.html";
+            }else if(move =='4'){
+                location.href = "./hyunji04.html";
+            }else if(move =='5'){
+                location.href = "./hyunji05.html";
+            }
+        }
+        </script>     
+    </body>   
+</html>
